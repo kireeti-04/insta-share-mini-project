@@ -1,0 +1,18 @@
+.somethingWrong-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 60px;
+}
+
+.somethingWrong-page button {
+  background-color: rgb(13, 158, 255);
+  color: white;
+  border: 0;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

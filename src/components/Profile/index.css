@@ -1,0 +1,135 @@
+.myprofile {
+  padding: 1% 20%;
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+.profile-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text-bold {
+  font-weight: 500;
+}
+
+.profile-name-mobile {
+  display: none;
+}
+
+.stories-img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  padding: 5px;
+  border: 1px rgb(218, 215, 215) solid;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.stories-border {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  padding-top: 40px;
+  overflow-x: auto;
+}
+
+.profile-con {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.counts {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.posts-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.user-posts-con {
+  padding: 10px;
+}
+
+.user-posts-border {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.posts-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.user-posts-title {
+  font-size: medium;
+}
+
+@media screen and (max-width: 992px) {
+  .myprofile {
+    padding: 1% 10%;
+  }
+
+  .profile-con {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myprofile {
+    padding: 0;
+    background-color: white;
+  }
+
+  .profile-name-mobile {
+    display: block;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 0;
+    padding-left: 2%;
+  }
+
+  .user-posts-con {
+    padding: 0;
+  }
+
+  .profile-con {
+    flex-wrap: wrap;
+    padding: 2%;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .user-posts-border {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myprofile {
+    padding: 0 8px;
+  }
+
+  .profile-con {
+    gap: 12px;
+  }
+
+  .user-posts-border {
+    grid-template-columns: 1fr;
+  }
+}

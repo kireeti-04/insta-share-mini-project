@@ -1,0 +1,47 @@
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 30px !important;
+}
+
+.stories-list {
+  padding: 3% 20%;
+  width: 100%;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 100;
+}
+
+.loader-container {
+  padding: 3% 20%;
+  text-align: center;
+  font-size: 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .stories-list {
+    padding: 2% 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stories-list {
+    padding: 2% 5%;
+    border-bottom: 1px grey solid;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
